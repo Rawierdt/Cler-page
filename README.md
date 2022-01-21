@@ -1,5 +1,8 @@
 <h1 align="center">🤖 Cler - Web Page 🤖</h1>
 
+<p align="center"> Index
+  <img src="display.png" alt="index" />
+</p>
 
 <p align="center">
   Cler discord bot web page.
