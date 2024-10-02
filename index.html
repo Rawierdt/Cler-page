@@ -1,123 +1,110 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cler's discord bot official website.">
+  <meta name="keywords" content="cler discord bot clerbot multipurpose bot discord">
+  <title>Cler</title>
 
   <!-- JQuery -->
-  <script src="./src/jquery.min.js.descarga"></script>
+  <script src="./src/jquery.min.js"></script>
 
   <!-- Axios -->
-  <script src="./src/axios.min.js.descarga"></script>
+  <script src="./src/axios.min.js"></script>
 
-  <!-- Latest compiled and minified bootstrap CSS -->
-  <link rel="stylesheet" href="./src/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <!-- Optional theme bootstrap -->
-  <link rel="stylesheet" href="./src/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./src/bootstrap.min.css">
+  <link rel="stylesheet" href="./src/bootstrap-theme.min.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 
   <!-- Fork Awesome -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
-
-  <!-- Latest compiled and minified bootstrap -->
-  <script src="./src/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
 
   <!-- Sweetalert2 -->
-  <link rel="stylesheet" href="./src/dark.css">
-  <script src="sweetalert2.min.js"></script>
   <link rel="stylesheet" href="sweetalert2.min.css">
-
-  <!-- Canvas background -->
-  <script src="./src/canvas.js"></script>
+  <script src="sweetalert2.min.js"></script>
 
   <!-- Custom styles -->
   <link href="./src/style.css" rel="stylesheet" type="text/css">
-
-  <!-- Modesta -->
   <link href="./src/modesta.css" rel="stylesheet" type="text/css">
 
-  <!-- Github ribbon -->
-  <script src="./src/l.js.descarga" async=""></script><style type="text/css">.vue-star-rating-star[data-v-ef4bc576]{overflow:visible!important}.vue-star-rating-star-rotate[data-v-ef4bc576]{transition:all .25s}.vue-star-rating-star-rotate[data-v-ef4bc576]:hover{transition:transform .25s;transform:rotate(-15deg) scale(1.3)}</style><style type="text/css">.vue-star-rating-star[data-v-fde73a0c]{display:inline-block}.vue-star-rating-pointer[data-v-fde73a0c]{cursor:pointer}.vue-star-rating[data-v-fde73a0c]{display:flex;align-items:center}.vue-star-rating-inline[data-v-fde73a0c]{display:inline-flex}.vue-star-rating-rating-text[data-v-fde73a0c]{margin-left:7px}.vue-star-rating-rtl[data-v-fde73a0c]{direction:rtl}.vue-star-rating-rtl .vue-star-rating-rating-text[data-v-fde73a0c]{margin-right:10px;direction:rtl}.sr-only[data-v-fde73a0c]{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}</style><style>[_nghost-ufi-c60]{font-family:Open Sans,sans-serif;color:#121212}</style></head><body><a style="z-index: 1;" class="github-corner" aria-label="View source on GitHub" onclick="window.location.href=&quot;https://github.com/LwnaDev/Cler&quot;">
-    <svg width="80" height="80" viewBox="0 0 250 250" style="z-index: 5; fill:rgba(0, 0, 0, 0.05); color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+  <!-- Canvas background -->
+  <script src="./src/canvas.js"></script>
+</head>
+
+<body>
+  <a style="z-index: 1;" class="github-corner" aria-label="View source on GitHub" href="https://github.com/LwnaDev/Cler">
+    <svg width="80" height="80" viewBox="0 0 250 250" style="fill:rgba(0, 0, 0, 0.05); color:#fff; position: absolute; top: 0; border: 0; right: 0;">
       <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-      <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-      <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+      <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"></path>
+      <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1"></path>
     </svg>
   </a>
 
   <!-- Page info -->
-  
-  <title>Cler</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Cler&#39;s discord bot official website.">
-  <meta name="keywords" content="cler discord bot clerbot mMultipurpose bot discord">
-
-  <link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/d44gtGX/avatar.png">
-  <meta property="og:title" content="Home">
-  <meta property="og:description" content="Cler&#39;s official website.">
-  <meta property="og:image" content="https://i.ibb.co/19FHvD8/clerpurple.jpg">
-  <meta property="og:type" content="website">
-
-    <div class="containerv">
-        <div class="position-absolute__withcontent">
-		<iframe src="https://clear.lwnadev.repl.co" name="Monitor" width="220" height="150"></iframe>
-        </div>
-    </div>
-
   <canvas id="canvas" width="1502" height="724"></canvas>
-  <script type="text/javascript">
-    backgroundEffect('canvas');
-  </script>
+  <script> backgroundEffect('canvas'); </script>
+
   <div class="mainblock">
-    <div style="right: 0; top: -55;" class="center-object">
+    <div class="center-object">
       <section class="me unset">
         <div class="avatar-container">
-          <a onclick="window.location.href=&quot;https://discord.com/oauth2/authorize?client_id=774150617546883073&permissions=8&scope=bot&quot;">
-            <img draggable="false" class="bigavatar" src="./src/avatar.png">
+          <a href="https://discord.com/oauth2/authorize?client_id=774150617546883073&permissions=8&scope=bot">
+            <img draggable="false" class="bigavatar" src="./src/avatar.png" alt="Avatar">
           </a>
         </div>
         <div class="unset">
           <h1 style="color: #FF015B" class="title monospace">Cler</h1>
-          <p style="color: white" class="undertitle monospace">Discord Multipurpose Bot<br \="">
-          100% free since 2020
-          </p>
+          <p style="color: white" class="undertitle monospace">Discord Multipurpose Bot<br>100% free since 2019</p>
         </div>
       </section>
+
+      <!-- Buttons -->
       <div class="buttons">
-        <a style="width: 200px; background-color: #FF015B;" class="btn alizarin-dropshadow animation hover" onclick="window.location.href=&quot;https://discord.com/oauth2/authorize?client_id=774150617546883073&permissions=8&scope=bot&quot;">Invite</a>
-        <a style="width: 200px; background-color: #195FF5;" class="btn twitter-dropshadow animation hover" onclick="window.location.href=&quot;https://discordapp.com/invite/Uck5Pq7MKY&quot;">Server</a>
+        <a style="width: 200px; background-color: #FF015B;" class="btn" href="https://discord.com/oauth2/authorize?client_id=774150617546883073&permissions=8&scope=bot">Invite</a>
+        <a style="width: 200px; background-color: #195FF5;" class="btn" href="https://discordapp.com/invite/Uck5Pq7MKY">Server</a>
+      </div>
+
+      <!-- Image info (correctly aligned) -->
+      <div class="containerv">
+        <div class="position-absolute__withcontent">
+          <!-- <iframe src="https://rawier.dev.ar/cler" name="Monitor" width="220" height="150"></iframe> -->
+          <img src="https://i.ibb.co/TMZq2nK/monitorcler.gif" alt="Cler GIF" class="img-fluid mt-4">
+        </div>
       </div>
     </div>
   </div>
-  <footer id="footer" style="margin-top: 634.4px;">
+
+  <!-- Footer -->
+  <footer id="footer">
     <div class="links">
       <div class="icon paypal">
-        <a onclick="window.location.href=&quot;https://www.paypal.com/paypalme/nexdrak&quot;">
+        <a href="https://www.paypal.com/paypalme/nexdrak">
           <i class="fab fa-paypal"></i>
         </a>
       </div>
       <div class="icon patreon">
-        <a target="_blank" onclick="window.location.href=&quot;https://ko-fi.com/nexdrak&quot;">
+        <a href="https://ko-fi.com/nexdrak">
           <i class="fas fa-coffee"></i>
         </a>
       </div>
       <div class="icon github">
-        <a target="_blank" onclick="window.location.href=&quot;https://github.com/LwnaDev&quot;">
+        <a href="https://github.com/Rawierdt">
           <i class="fab fa-github"></i>
         </a>
       </div>
       <div class="icon docs">
-        <a target="_blank" onclick="window.location.href=&quot;https://lwnadev.gitbook.io/cler/&quot;">
+        <a href="https://rawier.gitbook.io/cler">
           <i class="fas fa-book"></i>
         </a>
       </div>
     </div>
   </footer>
 
-  <!-- main JS -->
+  <!-- JS Files -->
   <script src="./src/main.js"></script>
-
-</body><app-content ng-version="11.1.0"></app-content><span style="--colorFg:#d3d9e3; --colorFgAlpha:#d3d9e31a; --colorFgIntense:#f9ffff; --colorFgFaded:#c9ced8; --colorFgFadedMore:#bec3cd; --colorFgFadedMost:#a6abb3; --colorBg:#2e2f37; --colorBgAlpha:#2e2f37e6; --colorBgAlphaHeavy:#2e2f37a6; --colorBgAlphaHeavier:#2e2f3740; --colorBgAlphaBlur:#2e2f37f2; --colorBgDark:#282931; --colorBgDarker:#23242b; --colorBgLight:#32333b; --colorBgLighter:#42434b; --colorBgLightIntense:#36373f; --colorBgIntense:#23242b; --colorBgIntenser:#1b1c24; --colorBgIntserAlpha:#181920eb; --colorBgInverse:#32333b; --colorBgInverser:#3e3f47; --colorBgFaded:#3a3b43; --backgroundBlur:blur(10px); --colorHighlightBg:#6590fd; --colorHighlightBgUnfocused:#565860; --colorHighlightBgAlpha:#6590fd1a; --colorHighlightBgDark:#4779e3; --colorHighlightFg:#ffffff; --colorHighlightFgAlpha:#ffffff80; --colorHighlightFgAlphaHeavy:#ffffff40; --colorAccentBg:#44454d; --colorAccentBgAlpha:#78798266; --colorAccentBgAlphaHeavy:#78798240; --colorAccentBgDark:#34353d; --colorAccentBgDarker:#1d1e25; --colorAccentBgFaded:#393939; --colorAccentBgFadedMore:#595a62; --colorAccentBgFadedMost:#787982; --colorAccentBorder:#34353d; --colorAccentBorderDark:#2a2b33; --colorAccentFg:#ffffff; --colorAccentFgFaded:#cacacb; --colorAccentFgAlpha:#ffffff40; --colorBorder:#1b1c24; --colorBorderDisabled:#23242b; --colorBorderSubtle:#212229; --colorBorderIntense:#0b0c15; --colorSuccessBg:#06a700; --colorSuccessBgAlpha:#06a7001a; --colorSuccessFg:#ffffff; --colorWarningBg:#efaf00; --colorWarningBgAlpha:#efaf001a; --colorWarningFg:#000000; --colorErrorBg:#c64539; --colorErrorBgAlpha:#c645391a; --colorErrorFg:#ffffff;"></span>
+</body>
 </html>
