@@ -15,7 +15,7 @@
 
 ## Lastest Version and What's New
 
-**v4.7.20**
+**v4.8.20**
 
 > [!NOTE]
 > Disclaimer: Esta es solo la pagina de health status..
